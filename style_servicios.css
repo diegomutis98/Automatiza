@@ -1,0 +1,152 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: auto;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.text-section {
+    flex: 1;
+    padding: 40px;
+}
+
+.text-section h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.text-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.text-section ul {
+    list-style-type: none;
+    margin-bottom: 24px;
+}
+
+.text-section ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.text-section ul li::before {
+    content: "✓";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.learn-more,
+.get-started {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.learn-more:hover {
+    background-color: #e0e0e0;
+}
+
+.get-started {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.get-started:hover {
+    background-color: #2980b9;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    text-align: center;
+    background-color: #1e73e8;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    width: 80%;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.get-started {
+    background-color: #ffffff;
+    color: #1e73e8;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.get-started:hover {
+    background-color: #e0e0e0;
+}
